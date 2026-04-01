@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69c96e2f959d0a695146559c_d840fc93-c2ff-40bf-bea8-3a7b2946778f",
-  "id": "Page1_Chunk",
+  "gitSyncId": "69c96e2f959d0a695146559c_9b23bfdd-1e05-4cc1-a35c-c0e5f5e60d75",
+  "id": "_cp.Client_ClientEndpoint",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 10 * FROM _cp.Client",
+      "body": "SELECT * FROM _cp.ClientEndpoint",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Chunk",
-    "pageId": "Page1",
+    "name": "ClientEndpoint",
+    "pageId": "_cp.Client",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

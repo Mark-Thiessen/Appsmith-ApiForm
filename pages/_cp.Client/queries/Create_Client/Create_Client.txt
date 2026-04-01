@@ -1,0 +1,21 @@
+INSERT INTO _cp.Client 
+(
+	Client_Code, 
+	Client_Name, 
+	Notes, 
+	Is_Active, 
+	CreatedUtc, 
+	ModifiedUtc, 
+	SubscriptionId
+) 
+VALUES 
+(
+	 
+	{{Customer_Code.text}}, 
+	{{Customer_Name.text}}, 
+	{{Notes_Clients1.text}}, 
+	1, 
+	CURRENT_TIMESTAMP, 
+	CURRENT_TIMESTAMP, 
+	{{Azure_Subscription_ID.text}}
+)

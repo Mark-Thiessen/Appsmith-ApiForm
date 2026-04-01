@@ -1,0 +1,9 @@
+UPDATE _cp.Client 
+SET 
+		Client_Name = {{Customer_Name.text}},
+		Client_Code = {{Customer_Code.text}},
+		Notes = {{Notes_Clients1.text}},
+		SubscriptionId = {{Azure_Subscription_ID.text}},
+		ModifiedUtc = CURRENT_TIMESTAMP
+
+WHERE Client_ID = {{Customer_ID.value}}

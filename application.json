@@ -18,8 +18,16 @@
   "icon": "workflows",
   "pages": [
     {
-      "id": "Page1",
+      "id": "_cp.Client",
       "isDefault": true
+    },
+    {
+      "id": "_cp.Endpoint",
+      "isDefault": false
+    },
+    {
+      "id": "_cp.ClientEndpoint",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

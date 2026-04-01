@@ -1,0 +1,164 @@
+{
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton3gleapcj30.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3gleapcj30.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3gleapcj30.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton3gleapcj30.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3gleapcj30.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton2": {
+      "buttonColor": "#dcfce7",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "add",
+      "id": "groupButton2",
+      "index": 0,
+      "isDisabled": "{{ !!Customer_ID.value }}",
+      "isVisible": true,
+      "label": "Add",
+      "menuItems": {},
+      "onClick": "{{\n  (async () => {\n    if (!Customer_Name.isValid) {\n      showAlert('Please fill all required fields', 'error');\n      return;\n    }\n\n    try {\n      await Create_Client.run();\n      storeValue('ignoreUrlId', true);\n      Client.run();\n      resetWidget(\"Form1\", true);\n      Table1.setSelectedRowIndex(-1);\n      showAlert('Successfully Created', 'success');\n    } catch (e) {\n      showAlert('Something is wrong with your data', 'error');\n    }\n  })()\n}}\n",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "#d8b4fe",
+      "buttonType": "MENU",
+      "disabledWhenInvalid": false,
+      "iconName": "more",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "More",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Clear Filters",
+          "onClick": "{{\n  storeValue('ignoreUrlId', true);\n  showAlert(\"Cleared\", \"info\");\n  navigateTo(\n    'https://app.appsmith.com/app/power-plan/powerplan-69c1b0bd444ba442296dea55',\n    {},\n    'SAME_WINDOW'\n  );\n}}",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "disabledWhenInvalid": false,
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 1,
+          "isDisabled": "{{ !Record_ID.value }}",
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "{{showModal(Modal1.name);}}",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3gleapcj30": {
+      "buttonColor": "#93c5fd",
+      "buttonType": "SIMPLE",
+      "iconName": "automatic-updates",
+      "id": "groupButton3gleapcj30",
+      "index": 1,
+      "isDisabled": "{{ !Customer_Name.value }}",
+      "isSeparator": false,
+      "isVisible": "true",
+      "itemType": "BUTTON",
+      "label": "Update",
+      "menuItems": {},
+      "onClick": "{{\n  (async () => {\n    if (!Customer_Name.isValid) {\n      showAlert('Please fill all required fields', 'error');\n      return;\n    }\n\n    try {\n      await Update_Client.run();\n      storeValue('ignoreUrlId', true);\n      Client.run();\n      resetWidget(\"Form1\", true);\n      Table1.setSelectedRowIndex(-1);\n      showAlert('Successfully Updated', 'success');\n    } catch (e) {\n      showAlert('Something is wrong with your data', 'error');\n    }\n  })()\n}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "0cirvydstp"
+    }
+  },
+  "isCanvas": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "id17ym7xrk",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 72,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 68,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 189,
+  "originalTopRow": 185,
+  "parentColumnSpace": 7.1171875,
+  "parentId": "c5q8kn2lmx",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "7aejxkk5c4",
+  "widgetName": "ButtonGroup1"
+}

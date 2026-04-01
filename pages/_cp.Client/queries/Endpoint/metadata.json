@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69c96e2f959d0a695146559c_1f6f85df-5b94-466e-8161-2702e1ccef62",
-  "id": "Page1_Client",
+  "gitSyncId": "69c96e2f959d0a695146559c_ba01f19e-eac1-419f-9f34-fdad52ef0252",
+  "id": "_cp.Client_Endpoint",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM _cp.Client",
+      "body": "SELECT * FROM _cp.Endpoint",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Client",
-    "pageId": "Page1",
+    "name": "Endpoint",
+    "pageId": "_cp.Client",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
