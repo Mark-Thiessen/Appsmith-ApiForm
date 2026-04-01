@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69c96e2f959d0a695146559c_1f6f85df-5b94-466e-8161-2702e1ccef62",
-  "id": "_cp.Client_Client",
+  "gitSyncId": "69c96e2f959d0a695146559c_9f027bf1-3816-4e77-b9be-1a42b610016a",
+  "id": "_cp.Client_Delete_Client",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 10 * FROM _cp.Client",
+      "body": "DELETE FROM _cp.Client WHERE Client_ID = {{ Table1.selectedRow.Client_ID || appsmith.URL.queryParams.id }}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "Client",
+    "name": "Delete_Client",
     "pageId": "_cp.Client",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

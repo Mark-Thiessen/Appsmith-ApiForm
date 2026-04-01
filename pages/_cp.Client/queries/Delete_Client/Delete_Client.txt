@@ -1,0 +1,1 @@
+DELETE FROM _cp.Client WHERE Client_ID = {{ Table1.selectedRow.Client_ID || appsmith.URL.queryParams.id }}

@@ -51,7 +51,7 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndex": "{{ appsmith.store.ignoreUrlId === true ? -1 : Client.data.findIndex(row => Number(row.Client_ID) == Number(appsmith.URL.queryParams.id)) }}",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -95,6 +95,9 @@
     },
     {
       "key": "primaryColumns.SubscriptionId.computedValue"
+    },
+    {
+      "key": "defaultSelectedRowIndex"
     }
   ],
   "dynamicPropertyPathList": [
@@ -106,9 +109,16 @@
     },
     {
       "key": "fontStyle"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "evenRowColor": "#ffffff",
@@ -135,9 +145,11 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "oddRowColor": "#ffffff",
+  "onRowSelected": "{{ null }}",
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
+  "primaryColumnId": "Client_ID",
   "primaryColumns": {
     "Client_Code": {
       "alias": "Client_Code",
