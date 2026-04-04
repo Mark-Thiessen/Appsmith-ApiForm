@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 12,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.SubscriptionId}}",
+  "defaultText": "{{Table1.selectedRow.Blob_Container_Name}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,9 +26,9 @@
   "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Azure Subscription ID",
+  "label": "Blob Container Name",
   "labelAlignment": "left",
-  "labelPosition": "Top",
+  "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
@@ -41,10 +41,10 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 35,
-  "originalTopRow": 28,
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
   "parentColumnSpace": 5.703125,
-  "parentId": "95izf85wlh",
+  "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -52,9 +52,9 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 28,
+  "topRow": 8,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "1pcmexeqxz",
-  "widgetName": "Azure_Subscription_ID"
+  "widgetId": "8062tkbrae",
+  "widgetName": "Blob_Container_Name_EndPoint"
 }

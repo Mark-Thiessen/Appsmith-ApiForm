@@ -3,7 +3,7 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 78,
+  "bottomRow": 82,
   "defaultCheckedState": "{{Table1.selectedRow.Is_Active}}",
   "dynamicBindingPathList": [
     {
@@ -42,14 +42,14 @@
   "originalBottomRow": 8,
   "originalTopRow": 4,
   "parentColumnSpace": 4.75390625,
-  "parentId": "4uz2jz7inf",
+  "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 34,
-  "topRow": 74,
+  "topRow": 78,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "mfwsj5dclq",
+  "widgetId": "61hl96h7z4",
   "widgetName": "IS_Active"
 }

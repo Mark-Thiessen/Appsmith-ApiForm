@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Client_Name}}",
+  "defaultText": "{{Table1.selectedRow.ClientEndpoint_ID}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,18 +17,18 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Customer",
+  "label": "Client EndPoint ID",
   "labelAlignment": "left",
-  "labelPosition": "Top",
+  "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
@@ -41,10 +41,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 11,
-  "originalTopRow": 4,
   "parentColumnSpace": 5.703125,
-  "parentId": "95izf85wlh",
+  "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -52,9 +50,9 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 4,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "mfy05llsgr",
-  "widgetName": "Customer_Name"
+  "widgetId": "cdp3plnjpv",
+  "widgetName": "ClientEnd_Point_ID"
 }

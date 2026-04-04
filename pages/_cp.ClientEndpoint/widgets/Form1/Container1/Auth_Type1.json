@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
+  "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Run_Limits_JSON}}",
+  "defaultText": "{{Table1.selectedRow.Auth_Type}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,9 +26,9 @@
   "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Run Limit Json",
+  "label": "Auth Type",
   "labelAlignment": "left",
-  "labelPosition": "Auto",
+  "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
@@ -41,10 +41,10 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 30,
-  "originalTopRow": 23,
+  "originalBottomRow": 45,
+  "originalTopRow": 41,
   "parentColumnSpace": 5.703125,
-  "parentId": "4uz2jz7inf",
+  "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -52,9 +52,9 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 34,
+  "topRow": 21,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "2btykms1ge",
-  "widgetName": "Run_Limit_Json"
+  "widgetId": "5cgh7ll6h8",
+  "widgetName": "Auth_Type1"
 }

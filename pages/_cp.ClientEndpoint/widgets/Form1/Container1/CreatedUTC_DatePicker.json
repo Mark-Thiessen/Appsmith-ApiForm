@@ -1,11 +1,13 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 74,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.API_Vendor_Name}}",
+  "closeOnSelection": true,
+  "dateFormat": "D MMMM, YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ new Date(Table1.selectedRow.CreatedUtc).toISOString() }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,47 +16,51 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
-  "isDisabled": false,
+  "firstDayOfWeek": 0,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "n84nus2pk9",
-  "label": "API Vendor",
+  "key": "30luu7syrd",
+  "label": "Created",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
   "leftColumn": 0,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
+  "mobileBottomRow": 39,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 13,
-  "mobileTopRow": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 32,
   "needsErrorInfo": false,
-  "originalBottomRow": 16,
-  "originalTopRow": 12,
+  "originalBottomRow": 66,
+  "originalTopRow": 62,
   "parentColumnSpace": 5.703125,
-  "parentId": "4uz2jz7inf",
+  "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shouldAllowAutofill": false,
-  "showStepArrows": false,
-  "topRow": 8,
-  "type": "INPUT_WIDGET_V2",
+  "shortcuts": false,
+  "timePrecision": "None",
+  "topRow": 70,
+  "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "mq1k8v7qby",
-  "widgetName": "APIVendor_Name"
+  "widgetId": "k7v5fgyp3v",
+  "widgetName": "CreatedUTC_DatePicker"
 }
