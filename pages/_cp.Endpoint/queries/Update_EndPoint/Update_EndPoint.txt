@@ -1,0 +1,21 @@
+UPDATE _cp.Endpoint 
+SET 
+		EndPoint_ID={{End_Point_ID.text}},
+		Is_Active = {{IS_Active.isChecked?1:0}},
+		EndPoint_Name = {{End_Point_Name.text}},
+		API_Vendor_Name = {{APIVendor_Name.text}},
+		Default_Headers_JSON = {{Default_Header_Json.text}},
+		Run_Limits_JSON = {{Run_Limit_Json.text}},
+		Base_URL = {{Base_URL1.text}},
+		Http_Method = {{Http_Method1.text}},
+		Pagination_Type = {{Pagination_Type1.text}},
+		Pagination_Config_JSON = {{Pagination_Config_Json.text}},
+		Processor_Function = {{Processor_Function1.text}},
+		Processor_Config_JSON = {{Processor_Config_Json.text}},
+		ModifiedUtc = CONVERT(date, {{ 
+  Modified_UTC.selectedDate 
+    ? moment(Modified_UTC.selectedDate).format("YYYY-MM-DD")
+    : null
+}}, 23),
+		
+		WHERE EndPoint_ID = {{End_Point_ID.value}}

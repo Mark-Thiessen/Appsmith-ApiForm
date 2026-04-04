@@ -129,7 +129,7 @@
       "itemType": "BUTTON",
       "label": "Update",
       "menuItems": {},
-      "onClick": "{{\n  (async () => {\n    if (!End_Point_Name.isValid) {\n      showAlert('Please fill all required fields', 'error');\n      return;\n    }\n\n    try {\n      await Update_Client.run();\n      storeValue('ignoreUrlId', true);\n      Client.run();\n      resetWidget(\"Form1\", true);\n      Table1.setSelectedRowIndex(-1);\n      showAlert('Successfully Updated', 'success');\n    } catch (e) {\n      showAlert('Something is wrong with your data', 'error');\n    }\n  })()\n}}",
+      "onClick": "{{\n  (async () => {\n    if (!End_Point_Name.isValid) {\n      showAlert('Please fill all required fields', 'error');\n      return;\n    }\n\n    try {\n      await Update_EndPoint.run();\n      storeValue('ignoreUrlId', true);\n      Endpoint.run();\n      resetWidget(\"Form1\", true);\n      Table1.setSelectedRowIndex(-1);\n      showAlert('Successfully Updated', 'success');\n    } catch (e) {\n      showAlert('Something is wrong with your data', 'error');\n    }\n  })()\n}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "0cirvydstp"

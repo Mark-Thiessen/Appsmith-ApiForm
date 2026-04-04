@@ -1,0 +1,1 @@
+DELETE FROM _cp.Endpoint WHERE EndPoint_ID = {{End_Point_ID.text}}
