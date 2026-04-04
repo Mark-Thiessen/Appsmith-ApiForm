@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 23,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Client_ID}}",
+  "defaultText": "{{Table1.selectedRow.Default_Headers_JSON}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,15 +20,15 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": true,
+  "inputType": "TEXT",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Customer ID",
+  "label": "Default Header Json",
   "labelAlignment": "left",
-  "labelPosition": "Left",
+  "labelPosition": "Auto",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
@@ -41,6 +41,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
   "parentColumnSpace": 5.703125,
   "parentId": "4uz2jz7inf",
   "parentRowSpace": 10,
@@ -50,9 +52,9 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 0,
+  "topRow": 16,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "j0puksb0vf",
-  "widgetName": "Customer_ID"
+  "widgetId": "5bnc4bw9fe",
+  "widgetName": "Default_Header_Json"
 }
