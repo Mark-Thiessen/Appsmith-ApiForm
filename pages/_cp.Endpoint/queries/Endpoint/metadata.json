@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69c96e2f959d0a695146559c_1f6f85df-5b94-466e-8161-2702e1ccef62",
-  "id": "_cp.Client_Client",
+  "gitSyncId": "69c96e2f959d0a695146559c_0a32be47-6b12-44b3-a591-96d579b9de9a",
+  "id": "_cp.Endpoint_Endpoint",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 10 * FROM _cp.Client\nWHERE Client_ID = TRY_CAST({{ appsmith.URL.queryParams.id || '0' }} AS INT)\n   OR TRY_CAST({{ appsmith.URL.queryParams.id || '0' }} AS INT) = 0",
+      "body": "SELECT TOP 10 * FROM _cp.Endpoint",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "WBN CORE",
       "pluginId": "mssql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "name": "Client",
-    "pageId": "_cp.Client",
+    "dynamicBindingPathList": [],
+    "name": "Endpoint",
+    "pageId": "_cp.Endpoint",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
