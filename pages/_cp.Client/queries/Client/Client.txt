@@ -1,3 +1,5 @@
-SELECT TOP 10 * FROM _cp.Client
-WHERE Client_ID = TRY_CAST({{ appsmith.URL.queryParams.id || '0' }} AS INT)
-   OR TRY_CAST({{ appsmith.URL.queryParams.id || '0' }} AS INT) = 0
+SELECT * FROM 
+_cp.Client
+WHERE 
+  '{{ appsmith.URL.queryParams.id || "" }}' = ''
+  OR Client_ID = '{{ appsmith.URL.queryParams.id }}'

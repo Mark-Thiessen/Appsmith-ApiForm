@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 10 * FROM _cp.Client\nWHERE Client_ID = TRY_CAST({{ appsmith.URL.queryParams.id || '0' }} AS INT)\n   OR TRY_CAST({{ appsmith.URL.queryParams.id || '0' }} AS INT) = 0",
+      "body": "SELECT * FROM \n_cp.Client\nWHERE \n  '{{ appsmith.URL.queryParams.id || \"\" }}' = ''\n  OR Client_ID = '{{ appsmith.URL.queryParams.id }}'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
