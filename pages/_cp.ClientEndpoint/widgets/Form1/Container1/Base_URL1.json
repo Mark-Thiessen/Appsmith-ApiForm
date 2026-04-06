@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 53,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Base_URL}}",
+  "defaultText": "{{Table1.selectedRow.Auth_Type}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Base URL",
+  "label": "Auth_Type",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -41,8 +41,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 37,
-  "originalTopRow": 30,
+  "originalBottomRow": 53,
+  "originalTopRow": 46,
   "parentColumnSpace": 5.703125,
   "parentId": "rn53egy98h",
   "parentRowSpace": 10,

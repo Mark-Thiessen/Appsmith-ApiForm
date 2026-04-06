@@ -36,7 +36,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{Delete_Client.run().then(() => {\n  Client.run();\n  showAlert('Successfully Deleted', 'success');\n  closeModal(Modal1.name);\n}).catch(() => {\n  showAlert('Something is wrong with your data', 'error');\n});}}",
+  "onClick": "{{Delete_Client_EndPoint.run().then(() => {\n  Client_EndPoint.run();\n  showAlert('Successfully Deleted', 'success');\n  closeModal(Modal1.name);\n}).catch(() => {\n  showAlert('Something is wrong with your data', 'error');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "dlth4lxa1a",

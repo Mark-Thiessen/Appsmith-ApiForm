@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 156,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Blob_Container_Name}}",
+  "defaultText": "{{Table1.selectedRow.DeltaLookbackDays}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Blob Container Name",
+  "label": "DeltaLookbackDays",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
@@ -41,8 +41,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 12,
-  "originalTopRow": 8,
+  "originalBottomRow": 156,
+  "originalTopRow": 152,
   "parentColumnSpace": 5.703125,
   "parentId": "rn53egy98h",
   "parentRowSpace": 10,
@@ -52,9 +52,9 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 8,
+  "topRow": 152,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "8062tkbrae",
-  "widgetName": "Blob_Container_Name_EndPoint"
+  "widgetId": "owgk4c0ptd",
+  "widgetName": "Delta_Look_back_Days"
 }

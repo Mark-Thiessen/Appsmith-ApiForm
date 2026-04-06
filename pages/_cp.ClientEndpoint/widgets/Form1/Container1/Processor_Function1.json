@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 60,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Processor_Function}}",
+  "defaultText": "{{Table1.selectedRow.Pagination_Type}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "n84nus2pk9",
-  "label": "Processor Function",
+  "label": "Pagination Type",
   "labelAlignment": "left",
   "labelPosition": "Auto",
   "labelStyle": "",
@@ -41,8 +41,8 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 62,
-  "originalTopRow": 55,
+  "originalBottomRow": 60,
+  "originalTopRow": 53,
   "parentColumnSpace": 5.703125,
   "parentId": "rn53egy98h",
   "parentRowSpace": 10,

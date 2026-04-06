@@ -3,8 +3,8 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 186,
-  "defaultCheckedState": "{{Table1.selectedRow.Is_Active}}",
+  "bottomRow": 191,
+  "defaultCheckedState": "{{Table1.selectedRow.SupportsDeletes}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,7 +28,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "nxcftw7l91",
-  "label": "IS Active",
+  "label": "Supports Deletes",
   "labelPosition": "Left",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -39,17 +39,17 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 31,
   "needsErrorInfo": false,
-  "originalBottomRow": 186,
-  "originalTopRow": 182,
+  "originalBottomRow": 191,
+  "originalTopRow": 187,
   "parentColumnSpace": 4.75390625,
   "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 34,
-  "topRow": 182,
+  "topRow": 187,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "61hl96h7z4",
-  "widgetName": "IS_Active"
+  "widgetId": "5ydl4conjc",
+  "widgetName": "Supports_Deletes"
 }

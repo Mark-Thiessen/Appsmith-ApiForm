@@ -1,11 +1,13 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 174,
   "boxShadow": "none",
-  "defaultText": "{{Table1.selectedRow.Blob_Container_Name}}",
+  "closeOnSelection": true,
+  "dateFormat": "D MMMM, YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ new Date(Table1.selectedRow.LastSuccessfulWatermarkUtc).toISOString() }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,47 +16,51 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
+  "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "n84nus2pk9",
-  "label": "Blob Container Name",
+  "key": "30luu7syrd",
+  "label": "Last Successful Watermark",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
   "leftColumn": 0,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
+  "mobileBottomRow": 39,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 13,
-  "mobileTopRow": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 32,
   "needsErrorInfo": false,
-  "originalBottomRow": 12,
-  "originalTopRow": 8,
+  "originalBottomRow": 174,
+  "originalTopRow": 170,
   "parentColumnSpace": 5.703125,
   "parentId": "rn53egy98h",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shouldAllowAutofill": false,
-  "showStepArrows": false,
-  "topRow": 8,
-  "type": "INPUT_WIDGET_V2",
+  "shortcuts": false,
+  "timePrecision": "None",
+  "topRow": 170,
+  "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "8062tkbrae",
-  "widgetName": "Blob_Container_Name_EndPoint"
+  "widgetId": "ak5r632855",
+  "widgetName": "Last_Successful_Watermark_Utc"
 }
