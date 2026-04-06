@@ -1,6 +1,5 @@
 INSERT INTO _cp.ClientEndpoint 
 (
-	ClientEndpoint_ID, 
 	Client_ID, 
 	EndPoint_ID, 
 	Blob_Container_Name, 
@@ -33,5 +32,33 @@ INSERT INTO _cp.ClientEndpoint
 ) 
 VALUES 
 (
-	1, 1, 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', NULL, NULL, NULL, 'text', 'text', NULL, NULL, 'text', 'text', NULL, 1, 1, NULL, 'text'
+	 1, 
+	{{EndPoint_ID1.text}},
+	{{Blob_Container_Name_EndPoint.text}},
+	{{Blob_Path_Prefix_Client.text}}, 
+	{{Blob_File_Naming.text}}, 
+	{{Http_Method1.text}}, 
+	{{Default_Headers_Json.text}}, 
+	{{Auth_Type1.text}}, 
+	{{Auth_Config_Json.text}}, 
+	{{Pagination_Type1.text}}, 
+	{{Pagination_Config_JSON1.text}}, 
+	{{Run_Limit_JSON.text}}, 
+	{{Processor_Functions.text}}, 
+	{{Processor_Config_Jsons.text.text}}, 
+	{{Chunking_Config_Json.text}}, 
+	1, 
+	CURRENT_TIMESTAMP, 
+	CURRENT_TIMESTAMP, 
+	{{Schedule_Types.text}}, 
+	{{Schedule_Config_Json.text}}, 
+	CONVERT(date, {{ Next_Run_Utc.selectedDate ? moment(Next_Run_Utc.selectedDate).format("YYYY-MM-		DD") : null }}, 23), 
+	CONVERT(date, {{ Last_Run_Utc.selectedDate ? moment(Last_Run_Utc.selectedDate).format("YYYY-MM-		DD") : null }}, 23), 
+	{{Load_Mode1.text}}, 
+	{{Watermark_Field.text}}, 
+	CONVERT(date, {{ Last_Successful_Watermark_Utc.selectedDate ? 					moment(Last_Successful_Watermark_Utc.selectedDate).format("YYYY-MM-		DD") : null }}, 23), 
+	{{Watermark_Overlaped_Minutes.text}},
+	{{Delta_Look_back_Days.text}}, 
+	1,  
+	{{Merge_Strategy.text}}
 )
