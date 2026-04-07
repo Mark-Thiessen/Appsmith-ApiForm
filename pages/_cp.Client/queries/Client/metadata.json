@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM \n_cp.Client\nWHERE \n  '{{ appsmith.URL.queryParams.id || \"\" }}' = ''\n  OR Client_ID = '{{ appsmith.URL.queryParams.id }}'",
+      "body": "SELECT * FROM \n_cp.Client\nWHERE \n  '{{ appsmith.URL.queryParams.cat || \"\" }}' = ''\n  OR Client_Name = '{{ appsmith.URL.queryParams.cat || \"\" }}'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
