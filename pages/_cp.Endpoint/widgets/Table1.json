@@ -57,7 +57,7 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "{{ appsmith.store.ignoreUrlId === true ? -1 : Endpoint.data.findIndex(row => Number(row.EndPoint_ID) == Number(appsmith.URL.queryParams.id)) }}",
+  "defaultSelectedRowIndex": "{{ appsmith.store.ignoreUrlId === true ? -1 : Endpoint.data.findIndex(row => Number(row.End_Point_ID) == Number(appsmith.URL.queryParams.id)) }}",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -164,6 +164,7 @@
   "mobileLeftColumn": 30,
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
+  "multiRowSelection": false,
   "needsErrorInfo": false,
   "oddRowColor": "#ffffff",
   "onRowSelected": "{{ null }}",
