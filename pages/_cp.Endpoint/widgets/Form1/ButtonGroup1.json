@@ -44,6 +44,9 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
     }
   ],
   "dynamicTriggerPathList": [
