@@ -1,1 +1,5 @@
-SELECT TOP 10 * FROM _cp.ClientEndpoint
+SELECT * 
+FROM _cp.ClientEndpoint
+WHERE 
+ '{{ appsmith.URL.queryParams.cat || "" }}' = ''
+  OR EndPoint_ID = '{{ appsmith.URL.queryParams.cat || "" }}'
