@@ -1,33 +1,43 @@
-INSERT INTO _cp.Endpoint 
-(
-		EndPoint_ID, 
-		API_Vendor_Name, 
-		EndPoint_Name, 
-		Base_URL, 
-		Http_Method, 
-		Default_Headers_JSON, 
-		Pagination_Type, 
-		Pagination_Config_JSON, 
-		Run_Limits_JSON, 
-		Processor_Function, 
-		Processor_Config_JSON, 
-		Is_Active, 
-		CreatedUtc, 
-		ModifiedUtc
-) VALUES 
-(
-			{{End_Point_ID.text}}, 
-			{{APIVendor_Name.text}}, 
-			{{End_Point_Name.text}}, 
-			{{Base_URL1.text}}, 
-			{{Http_Method1.text}}, 
-			{{Default_Header_Json.text}}, 
-			{{Pagination_Type1.text}}, 
-			{{Pagination_Config_Json.text}}, 
-			{{Run_Limit_Json.text}}, 
-			{{Processor_Function1.text}}, 
-			{{Processor_Config_Json.text}}, 
-			1, 
-			CURRENT_TIMESTAMP,
-			CURRENT_TIMESTAMP
+IF EXISTS (
+    SELECT 1
+    FROM _cp.Endpoint
+    WHERE EndPoint_ID = {{End_Point_ID.text}}
 )
+BEGIN
+    THROW 50001, 'EndPoint_ID already exists.', 1;
+END
+
+INSERT INTO _cp.Endpoint
+(
+    EndPoint_ID,
+    API_Vendor_Name,
+    EndPoint_Name,
+    Base_URL,
+    Http_Method,
+    Default_Headers_JSON,
+    Pagination_Type,
+    Pagination_Config_JSON,
+    Run_Limits_JSON,
+    Processor_Function,
+    Processor_Config_JSON,
+    Is_Active,
+    CreatedUtc,
+    ModifiedUtc
+)
+VALUES
+(
+    {{End_Point_ID.text}},
+    {{APIVendor_Name.text}},
+    {{End_Point_Name.text}},
+    {{Base_URL1.text}},
+    {{Http_Method1.text}},
+    {{Default_Header_Json.text}},
+    {{Pagination_Type1.text}},
+    {{Pagination_Config_Json.text}},
+    {{Run_Limit_Json.text}},
+    {{Processor_Function1.text}},
+    {{Processor_Config_Json.text}},
+    1,
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP
+);
