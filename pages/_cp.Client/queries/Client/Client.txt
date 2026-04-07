@@ -2,4 +2,4 @@ SELECT * FROM
 _cp.Client
 WHERE 
   '{{ appsmith.URL.queryParams.cat || "" }}' = ''
-  OR Client_Name = '{{ appsmith.URL.queryParams.cat || "" }}'
+  OR Client_Code = '{{ appsmith.URL.queryParams.cat || "" }}'
