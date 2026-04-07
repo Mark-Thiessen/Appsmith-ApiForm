@@ -16,6 +16,6 @@ SET
   Modified_UTC.selectedDate 
     ? moment(Modified_UTC.selectedDate).format("YYYY-MM-DD")
     : null
-}}, 23),
+}}, 23)
 		
 		WHERE EndPoint_ID = {{End_Point_ID.value}}
