@@ -4,6 +4,7 @@ SET
 		Client_Code = {{Customer_Code.text}},
 		Notes = {{Notes_Clients1.text}},
 		SubscriptionId = {{Azure_Subscription_ID.text}},
+		Is_Active = {{IS_Active1.isChecked?1:0}},
 		ModifiedUtc = CURRENT_TIMESTAMP
 
 WHERE Client_ID = {{Customer_ID.value}}

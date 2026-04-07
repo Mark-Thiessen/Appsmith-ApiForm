@@ -123,7 +123,7 @@
       "iconName": "automatic-updates",
       "id": "groupButton3gleapcj30",
       "index": 1,
-      "isDisabled": "{{ !Customer_Name.value }}",
+      "isDisabled": "{{ !Customer_ID.value }}",
       "isSeparator": false,
       "isVisible": "true",
       "itemType": "BUTTON",
