@@ -95,7 +95,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Clear Filters",
-          "onClick": "{{\n  storeValue('ignoreUrlId', true);\n  showAlert(\"Cleared\", \"info\");\n  navigateTo(\n    'https://app.appsmith.com/app/api-form/cp-client-69c96e2f959d0a695146559e',\n    {},\n    'SAME_WINDOW'\n  );\n}}",
+          "onClick": "{{\n  storeValue('ignoreUrlId', true);\n  showAlert(\"Cleared\", \"info\");\n  navigateTo(\n    'https://app.appsmith.com/app/api-form/cp-clientendpoint-69ca87bde2496b504abf0312',\n    {},\n    'SAME_WINDOW'\n  );\n}}",
           "widgetId": ""
         },
         "menuItem3": {
