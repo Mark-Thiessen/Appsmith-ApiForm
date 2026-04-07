@@ -170,7 +170,7 @@
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
-  "primaryColumnId": "Client_ID",
+  "primaryColumnId": "EndPoint_ID",
   "primaryColumns": {
     "API_Vendor_Name": {
       "alias": "API_Vendor_Name",

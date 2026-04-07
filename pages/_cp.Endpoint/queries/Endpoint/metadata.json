@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 10 * FROM _cp.Endpoint",
+      "body": "SELECT *\nFROM _cp.Endpoint\nWHERE \n '{{ appsmith.URL.queryParams.cat || \"\" }}' = ''\n  OR EndPoint_Name = '{{ appsmith.URL.queryParams.cat || \"\" }}'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "WBN CORE",
       "pluginId": "mssql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "Endpoint",
     "pageId": "_cp.Endpoint",
     "runBehaviour": "AUTOMATIC",
