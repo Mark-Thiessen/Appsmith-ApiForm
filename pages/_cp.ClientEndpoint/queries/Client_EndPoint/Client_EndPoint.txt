@@ -1,4 +1,4 @@
 SELECT * FROM _cp.ClientEndpoint
 WHERE 
  '{{ appsmith.URL.queryParams.cat || "" }}' = ''
-  OR ClientEndpoint_ID = '{{ appsmith.URL.queryParams.cat || "" }}'
+  OR EndPoint_ID = '{{ appsmith.URL.queryParams.cat || "" }}'
