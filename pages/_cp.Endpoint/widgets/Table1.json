@@ -50,8 +50,16 @@
   ],
   "columnUpdatedAt": 1775482477539,
   "columnWidthMap": {
+    "API_Vendor_Name": 104,
+    "CreatedUtc": 128,
+    "EndPoint_ID": 134,
+    "EndPoint_Name": 125,
+    "Http_Method": 100,
     "Is_Active": 107,
-    "Processor_Function": 201
+    "ModifiedUtc": 132,
+    "Pagination_Type": 98,
+    "Processor_Config_JSON": 115,
+    "Processor_Function": 173
   },
   "compactMode": "SHORT",
   "customIsLoading": false,
@@ -158,7 +166,7 @@
   "isVisibleSearch": true,
   "key": "gzkp1hs1r9",
   "label": "Data",
-  "leftColumn": 17,
+  "leftColumn": 15,
   "minWidth": 450,
   "mobileBottomRow": 28,
   "mobileLeftColumn": 30,

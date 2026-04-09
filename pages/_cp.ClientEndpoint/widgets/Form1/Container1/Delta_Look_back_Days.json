@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 140,
+  "bottomRow": 117,
   "boxShadow": "none",
   "defaultText": "{{Table1.selectedRow.DeltaLookbackDays}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 136,
+  "topRow": 113,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "owgk4c0ptd",

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 27,
+  "bottomRow": 24,
   "boxShadow": "none",
   "defaultText": "{{Table1.selectedRow.Blob_Path_Prefix}}",
   "dynamicBindingPathList": [
@@ -28,7 +28,7 @@
   "key": "n84nus2pk9",
   "label": "Blob Path Prefix",
   "labelAlignment": "left",
-  "labelPosition": "Auto",
+  "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "0",
