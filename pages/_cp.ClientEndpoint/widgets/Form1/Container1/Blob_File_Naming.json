@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 31,
   "boxShadow": "none",
   "defaultText": "{{Table1.selectedRow.Blob_File_Naming_JSON}}",
   "dynamicBindingPathList": [
