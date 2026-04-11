@@ -51,7 +51,7 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "{{\nappsmith.store.ignoreUrlId == true ? -1 : Client.data.findIndex(row => Number(row.Client_ID) == Number(appsmith.URL.queryParams.id)) \n}}",
+  "defaultSelectedRowIndex": "{{\nappsmith.store.ignoreUrlId === true   ? -1\n  : Client.data.findIndex(\n      row =>\n        String(row.Client_Name || \"\").trim().toLowerCase() ===\n        String(appsmith.URL.queryParams.id || \"\").trim().toLowerCase()\n    )\n}}",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -149,7 +149,7 @@
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
-  "primaryColumnId": "Client_ID",
+  "primaryColumnId": "Client_Name",
   "primaryColumns": {
     "Client_Code": {
       "alias": "Client_Code",
