@@ -1,1 +1,1 @@
-DELETE FROM _cp.ClientEndpoint WHERE 1=0 -- Specify a valid condition here. Removing the condition may delete everything in the table!
+DELETE FROM _cp.ClientEndpoint WHERE ClientEndpoint_ID = {{ClientEnd_Point_ID.text}}

@@ -65,7 +65,7 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "{{\nappsmith.store.ignoreUrlId == true \n  ? -1 \n  : Endpoint.data.findIndex(\n      row => String(row.EndPoint_ID).trim() === String(appsmith.URL.queryParams.id).trim()\n    )\n}}",
+  "defaultSelectedRowIndex": "{{\nappsmith.store.ignoreUrlId == true   ? -1 \n  : Endpoint.data.findIndex(\n      row => String(row.EndPoint_ID).trim() === String(appsmith.URL.queryParams.id).trim()\n    )\n}}",
   "defaultSelectedRowIndices": [
     0
   ],

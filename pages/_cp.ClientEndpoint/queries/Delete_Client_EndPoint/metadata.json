@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM _cp.ClientEndpoint WHERE 1=0 -- Specify a valid condition here. Removing the condition may delete everything in the table!",
+      "body": "DELETE FROM _cp.ClientEndpoint WHERE ClientEndpoint_ID = {{ClientEnd_Point_ID.text}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "WBN CORE",
       "pluginId": "mssql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "Delete_Client_EndPoint",
     "pageId": "_cp.ClientEndpoint",
     "runBehaviour": "MANUAL",

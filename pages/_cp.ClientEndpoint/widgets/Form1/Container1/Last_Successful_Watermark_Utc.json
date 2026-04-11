@@ -27,7 +27,7 @@
   ],
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
