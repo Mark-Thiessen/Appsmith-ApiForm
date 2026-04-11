@@ -244,7 +244,7 @@
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
-  "primaryColumnId": "ClientEndpoint_ID",
+  "primaryColumnId": "EndPoint_ID",
   "primaryColumns": {
     "Auth_Config_JSON": {
       "alias": "Auth_Config_JSON",
