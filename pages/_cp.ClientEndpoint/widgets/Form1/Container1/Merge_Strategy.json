@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 121,
+  "bottomRow": 135,
   "boxShadow": "none",
   "defaultText": "{{Table1.selectedRow.MergeStrategy}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 117,
+  "topRow": 131,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ntonxj1t7m",

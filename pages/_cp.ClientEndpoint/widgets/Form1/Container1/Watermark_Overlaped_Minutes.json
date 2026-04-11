@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 113,
+  "bottomRow": 127,
   "boxShadow": "none",
   "defaultText": "{{Table1.selectedRow.WatermarkOverlapMinutes}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 109,
+  "topRow": 123,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "emsyod5704",
