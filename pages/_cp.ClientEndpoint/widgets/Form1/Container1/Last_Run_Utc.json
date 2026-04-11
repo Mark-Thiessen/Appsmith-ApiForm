@@ -5,7 +5,7 @@
   "bottomRow": 143,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "D MMMM, YYYY",
+  "dateFormat": "YYYY-MM-DD hh:mm:ss A",
   "datePickerType": "DATE_PICKER",
   "defaultDate": "{{ new Date(Table1.selectedRow.LastRunUtc).toISOString() }}",
   "dynamicBindingPathList": [
