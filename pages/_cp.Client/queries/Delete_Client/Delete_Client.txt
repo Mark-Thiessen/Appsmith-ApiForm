@@ -1,1 +1,1 @@
-DELETE FROM _cp.Client WHERE Client_Name = {{ Table1.selectedRow.Customer_Name}}
+DELETE FROM _cp.Client WHERE Client_ID = {{Table1.selectedRow.Client_ID}}

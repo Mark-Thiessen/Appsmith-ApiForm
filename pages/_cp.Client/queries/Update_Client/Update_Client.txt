@@ -7,4 +7,4 @@ SET
 		Is_Active = {{IS_Active1.isChecked?1:0}},
 		ModifiedUtc = CURRENT_TIMESTAMP
 
-WHERE Client_Name = {{Customer_Name.text}}
+WHERE Client_ID = {{Table1.selectedRow.Client_ID}}

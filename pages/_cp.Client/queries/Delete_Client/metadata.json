@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM _cp.Client WHERE Client_Name = {{ Table1.selectedRow.Customer_Name}}\n",
+      "body": "DELETE FROM _cp.Client WHERE Client_ID = {{Table1.selectedRow.Client_ID}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
