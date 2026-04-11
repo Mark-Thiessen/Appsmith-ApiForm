@@ -23,7 +23,7 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "n84nus2pk9",
   "label": "EndPoint ID",
