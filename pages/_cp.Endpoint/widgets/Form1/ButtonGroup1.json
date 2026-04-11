@@ -75,7 +75,7 @@
       "isVisible": true,
       "label": "Add",
       "menuItems": {},
-      "onClick": "{{\n  (async () => {\n    if (!End_Point_Name.isValid) {\n      showAlert('Please fill all required fields', 'error');\n      return;\n    }\n\n    try {\n      await Create_EndPoint.run();\n      storeValue('ignoreUrlId', true);\n      Endpoint.run();\n      resetWidget(\"Form1\", true);\n      Table1.setSelectedRowIndex(-1);\n      showAlert('Successfully Created', 'success');\n    } catch (e) {\n      showAlert('Something is wrong with your data', 'error');\n    }\n  })()\n}}\n",
+      "onClick": "{{\n  (async () => {\n    if (!End_Point_ID.isValid) {\n      showAlert('Please fill all required fields', 'error');\n      return;\n    }\n\n    try {\n      await Create_EndPoint.run();\n      storeValue('ignoreUrlId', true);\n      Endpoint.run();\n      resetWidget(\"Form1\", true);\n      Table1.setSelectedRowIndex(-1);\n      showAlert('Successfully Created', 'success');\n    } catch (e) {\n      showAlert('Something is wrong with your data', 'error');\n    }\n  })()\n}}\n",
       "placement": "CENTER",
       "widgetId": ""
     },
