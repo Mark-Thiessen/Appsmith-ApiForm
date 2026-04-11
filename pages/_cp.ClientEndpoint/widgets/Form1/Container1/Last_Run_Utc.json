@@ -57,7 +57,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shortcuts": false,
-  "timePrecision": "None",
+  "timePrecision": "minute",
   "topRow": 139,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,

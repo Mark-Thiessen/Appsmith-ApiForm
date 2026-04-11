@@ -5,7 +5,7 @@
   "bottomRow": 139,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "D MMMM, YYYY",
+  "dateFormat": "YYYY-MM-DD hh:mm:ss A",
   "datePickerType": "DATE_PICKER",
   "defaultDate": "{{ new Date(Table1.selectedRow.NextRunUtc).toISOString() }}",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shortcuts": false,
-  "timePrecision": "None",
+  "timePrecision": "minute",
   "topRow": 135,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
