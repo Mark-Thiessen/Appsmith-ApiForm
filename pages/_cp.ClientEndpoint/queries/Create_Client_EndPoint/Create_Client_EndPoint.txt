@@ -52,7 +52,7 @@ VALUES
 	CURRENT_TIMESTAMP, 
 	{{Schedule_Types.text}}, 
 	{{Schedule_Config_Json.text}}, 
-	CONVERT(date, {{ Next_Run_Utc.selectedDate ? moment(Next_Run_Utc.selectedDate).format("YYYY-MM-		DD") : null }}, 23), 
+	CONVERT(date, {{ Next_Run_Utc.selectedDate? moment(Next_Run_Utc.selectedDate).format("YYYY-MM-DD") : null }}, 23), 
 	CONVERT(date, {{ Last_Run_Utc.selectedDate ? moment(Last_Run_Utc.selectedDate).format("YYYY-MM-		DD") : null }}, 23), 
 	{{Load_Mode1.text}}, 
 	{{Watermark_Field.text}}, 
