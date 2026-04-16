@@ -15,7 +15,7 @@ SET
 	Processor_Function = {{Processor_Functions.text}}, 
 	Processor_Config_JSON = {{Processor_Config_Jsons.text.text}}, 
 	Chunking_Config_JSON = {{Chunking_Config_Json.text}}, 
-	Is_Active = 1, 
+	Is_Active = {{IS_Active.isChecked?1:0}}, 
 	ModifiedUtc = CURRENT_TIMESTAMP, 
 	Schedule_Type = {{Schedule_Types.text}}, 
 	Schedule_Config_JSON = {{Schedule_Config_Json.text}}, 
@@ -26,7 +26,7 @@ SET
 	LastSuccessfulWatermarkUtc = CONVERT(date, {{ Last_Successful_Watermark_Utc.selectedDate ? moment(Last_Successful_Watermark_Utc.selectedDate).format("YYYY-MM-DD") : null }}, 23), 
 	WatermarkOverlapMinutes = {{Watermark_Overlaped_Minutes.text}},
 	DeltaLookbackDays = {{Delta_Look_back_Days.text}}, 
-	SupportsDeletes = 1,  
+	SupportsDeletes = {{Supports_Deletes.isChecked?1:0}},  
 	MergeStrategy = {{Merge_Strategy.text}}
 WHERE 
 ClientEndpoint_ID = {{ClientEnd_Point_ID.text}}
