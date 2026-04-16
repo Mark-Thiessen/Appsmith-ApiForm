@@ -45,7 +45,7 @@ VALUES
 	{{Pagination_Config_JSON1.text}}, 
 	{{Run_Limit_JSON.text}}, 
 	{{Processor_Functions.text}}, 
-	{{Processor_Config_Jsons.text.text}}, 
+	{{Processor_Config_Jsons.text}}, 
 	{{Chunking_Config_Json.text}}, 
 	1, 
 	CURRENT_TIMESTAMP, 
@@ -61,4 +61,5 @@ VALUES
 	{{Delta_Look_back_Days.text}}, 
 	1,  
 	{{Merge_Strategy.text}}
+	
 )
