@@ -13,7 +13,7 @@ SET
 	Pagination_Config_JSON = {{Pagination_Config_JSON1.text}}, 
 	Run_Limits_JSON = {{Run_Limit_JSON.text}}, 
 	Processor_Function = {{Processor_Functions.text}}, 
-	Processor_Config_JSON = {{Processor_Config_Jsons.text.text}}, 
+	Processor_Config_JSON = {{Processor_Config_Jsons.text}}, 
 	Chunking_Config_JSON = {{Chunking_Config_Json.text}}, 
 	Is_Active = {{IS_Active.isChecked?1:0}}, 
 	ModifiedUtc = CURRENT_TIMESTAMP, 
