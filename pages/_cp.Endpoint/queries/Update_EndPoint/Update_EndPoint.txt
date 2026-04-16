@@ -1,7 +1,7 @@
 UPDATE _cp.Endpoint 
 SET 
 		EndPoint_ID={{End_Point_ID.text}},
-		Is_Active = {{IS_Active.isChecked?1:0}},
+		Is_Active = {{IS_Active.isChecked? 1:0}},
 		EndPoint_Name = {{End_Point_Name.text}},
 		API_Vendor_Name = {{APIVendor_Name.text}},
 		Default_Headers_JSON = {{Default_Header_Json.text}},
